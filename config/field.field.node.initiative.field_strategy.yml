@@ -1,0 +1,29 @@
+uuid: 777c3fe5-d124-44ed-85d2-d9c5a678a6d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strategy
+    - node.type.initiative
+    - taxonomy.vocabulary.strategy
+id: node.initiative.field_strategy
+field_name: field_strategy
+entity_type: node
+bundle: initiative
+label: 'Hvilke strategier og planer understøtter initiativet'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      strategy: strategy
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

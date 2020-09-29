@@ -1,0 +1,11 @@
+uuid: 1259086c-e986-4637-b194-1e5aeee44069
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.funding
+id: taxonomy_term.funding
+target_entity_type_id: taxonomy_term
+target_bundle: funding
+default_langcode: site_default
+language_alterable: false

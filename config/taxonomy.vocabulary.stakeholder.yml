@@ -1,0 +1,8 @@
+uuid: 4398a9e1-15b2-4685-b8e4-71317cf7a2ff
+langcode: en
+status: true
+dependencies: {  }
+name: 'Interessenter og samarbejdspartnere'
+vid: stakeholder
+description: ''
+weight: 0

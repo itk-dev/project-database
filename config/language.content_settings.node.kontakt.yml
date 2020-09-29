@@ -1,0 +1,11 @@
+uuid: 987d7461-c6a2-4ceb-893c-0e6c3a0ff155
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.kontakt
+id: node.kontakt
+target_entity_type_id: node
+target_bundle: kontakt
+default_langcode: site_default
+language_alterable: false

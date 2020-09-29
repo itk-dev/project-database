@@ -1,0 +1,29 @@
+uuid: 59817626-a1ce-4b1b-9736-a049f9c670db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_endorsement_author
+    - node.type.initiative
+    - taxonomy.vocabulary.endorsement_author
+id: node.initiative.field_endorsement_author
+field_name: field_endorsement_author
+entity_type: node
+bundle: initiative
+label: 'Hvor er det vedtaget'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      endorsement_author: endorsement_author
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

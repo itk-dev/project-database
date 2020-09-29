@@ -1,0 +1,52 @@
+uuid: ff60f223-606e-4910-ab7e-7545d1ed3463
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.kontakt.field_department
+    - field.field.node.kontakt.field_email
+    - field.field.node.kontakt.field_phone
+    - node.type.kontakt
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.kontakt.default
+targetEntityType: node
+bundle: kontakt
+mode: default
+content:
+  field_department:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_phone:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

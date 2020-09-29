@@ -1,0 +1,8 @@
+uuid: 33172888-1e29-417d-9c7a-bb5e2f8d448b
+langcode: und
+status: true
+dependencies: {  }
+name: 'Intiativ karakter'
+vid: initiative_type
+description: ''
+weight: 0

@@ -1,0 +1,8 @@
+uuid: df580af1-0c28-4705-86cf-9bde79d4bc93
+langcode: en
+status: true
+dependencies: {  }
+name: 'Organisatorisk forankring'
+vid: organizational_anchoring
+description: ''
+weight: 0

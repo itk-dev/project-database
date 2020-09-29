@@ -1,0 +1,8 @@
+uuid: 510d6a78-e273-4dc1-99fa-ba42a8a910ed
+langcode: und
+status: true
+dependencies: {  }
+name: Kategorier
+vid: category
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: 4888d3dd-f71b-4d10-9d86-a4d33cb4123a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.kontakt
+id: node.kontakt.field_email
+field_name: field_email
+entity_type: node
+bundle: kontakt
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

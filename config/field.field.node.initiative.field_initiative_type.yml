@@ -1,0 +1,29 @@
+uuid: d8c4f61e-2ae2-4acc-a71c-395072c8e1fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_initiative_type
+    - node.type.initiative
+    - taxonomy.vocabulary.initiative_type
+id: node.initiative.field_initiative_type
+field_name: field_initiative_type
+entity_type: node
+bundle: initiative
+label: 'Initiativets karakter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      initiative_type: initiative_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

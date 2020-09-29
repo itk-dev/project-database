@@ -1,0 +1,11 @@
+uuid: 34015f03-9f84-4bb9-ae46-845d19ff5097
+langcode: en
+status: true
+dependencies: {  }
+name: Kontakt
+type: kontakt
+description: Kontaktperson
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

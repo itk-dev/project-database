@@ -1,0 +1,8 @@
+uuid: df0e93ee-3217-4c12-a9b0-25245d75832a
+langcode: und
+status: true
+dependencies: {  }
+name: 'Hvor er det vedtaget'
+vid: endorsement_author
+description: ''
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 49a0cd8e-3109-451f-b2aa-742392fd162f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizational_anchoring
+    - node.type.initiative
+    - taxonomy.vocabulary.organizational_anchoring
+id: node.initiative.field_organizational_anchoring
+field_name: field_organizational_anchoring
+entity_type: node
+bundle: initiative
+label: 'Organisatorisk forankring'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organizational_anchoring: organizational_anchoring
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

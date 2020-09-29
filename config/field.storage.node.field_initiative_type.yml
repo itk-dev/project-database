@@ -1,0 +1,20 @@
+uuid: 9af58ca2-d79f-4e65-9e9a-231d8e6e96fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_initiative_type
+field_name: field_initiative_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

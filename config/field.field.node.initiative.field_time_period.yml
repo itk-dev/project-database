@@ -1,0 +1,21 @@
+uuid: 07561ede-5323-4586-b5b0-6f083142c0af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_period
+    - node.type.initiative
+  module:
+    - datetime_range
+id: node.initiative.field_time_period
+field_name: field_time_period
+entity_type: node
+bundle: initiative
+label: Tidshorisont
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

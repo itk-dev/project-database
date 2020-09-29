@@ -1,0 +1,11 @@
+uuid: 4ebead18-61f9-4bf7-b395-37d68421eb2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategy
+id: taxonomy_term.strategy
+target_entity_type_id: taxonomy_term
+target_bundle: strategy
+default_langcode: site_default
+language_alterable: false

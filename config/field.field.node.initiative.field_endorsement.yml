@@ -1,0 +1,23 @@
+uuid: b4eb97d2-7bce-4f8e-aed2-e5bba32df550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_endorsement
+    - node.type.initiative
+id: node.initiative.field_endorsement
+field_name: field_endorsement
+entity_type: node
+bundle: initiative
+label: 'Er initiativet vedtaget'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nej
+field_type: boolean

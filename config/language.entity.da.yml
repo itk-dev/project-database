@@ -1,9 +1,9 @@
-uuid: 547d72c1-c5a1-46d3-8ed5-91f41ebae929
+uuid: 840c3726-2f3b-4183-9987-af38d4b21e50
 langcode: da
 status: true
 dependencies: {  }
 id: da
 label: Danish
 direction: ltr
-weight: 0
+weight: -10
 locked: false

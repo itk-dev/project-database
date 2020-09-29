@@ -1,0 +1,21 @@
+uuid: 97b436da-1d12-46c1-aaa5-f5e5e945d67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_status_additional
+    - node.type.initiative
+  module:
+    - text
+id: node.initiative.field_status_additional
+field_name: field_status_additional
+entity_type: node
+bundle: initiative
+label: 'Status supplerende tekst'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,8 @@
+uuid: 8184eec1-f938-40f8-b9c9-7c83c095dc4f
+langcode: und
+status: true
+dependencies: {  }
+name: Strategier
+vid: strategy
+description: ''
+weight: 0

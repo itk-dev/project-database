@@ -1,0 +1,22 @@
+uuid: 2332a967-e3c0-4af5-ba3e-baaa845adbd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.kontakt
+id: node.kontakt.promote
+field_name: promote
+entity_type: node
+bundle: kontakt
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,6 +1,6 @@
-uuid: 6676306f-c422-44b6-9f77-4f93b4cf3e3e
-name: drupal
-mail: my@aarhus.dk
+uuid: f76344da-77c3-4a8a-900a-d185b55374b4
+name: 'Drush Site-Install'
+mail: admin@example.com
 slogan: ''
 page:
   403: ''

@@ -1,0 +1,27 @@
+uuid: 02c57a87-5e6f-4170-aaba-168282f9d950
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.initiative
+  module:
+    - file
+id: node.initiative.field_file
+field_name: field_file
+entity_type: node
+bundle: initiative
+label: Filer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: files
+  file_extensions: 'doc pdf docx xls xlsx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

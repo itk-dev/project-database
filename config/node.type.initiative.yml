@@ -1,0 +1,11 @@
+uuid: f12a94cf-c11b-4e11-a905-8db3b30b0653
+langcode: en
+status: true
+dependencies: {  }
+name: Initiativ
+type: initiative
+description: 'Opret initiativ.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

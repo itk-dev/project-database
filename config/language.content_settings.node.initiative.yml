@@ -1,0 +1,11 @@
+uuid: ecad3b3f-c774-4aae-b0ae-587a735e559f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.initiative
+id: node.initiative
+target_entity_type_id: node
+target_bundle: initiative
+default_langcode: site_default
+language_alterable: false

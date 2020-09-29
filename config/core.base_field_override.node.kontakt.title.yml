@@ -1,0 +1,18 @@
+uuid: dc2b9f1e-9d30-4267-9241-4311b1fc892f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.kontakt
+id: node.kontakt.title
+field_name: title
+entity_type: node
+bundle: kontakt
+label: Navn
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
