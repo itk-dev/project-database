@@ -757,15 +757,27 @@ $settings['entity_update_backup'] = TRUE;
 $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 /**
+ * Load docker development override configuration, if available.
+ *
+ * Use settings.local.php to override variables on secondary (staging,
+ * development, etc) installations of this site. Typically used to disable
+ * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
+ * other things that should not happen on development and testing sites.
+ *
+ * Keep this code block at the end of this file to take full effect.
+ */
+
+if (file_exists($app_root . '/' . $site_path . '/docker.settings.local.php')) {
+  include $app_root . '/' . $site_path . '/docker.settings.local.php';
+}
+
+/**
  * Load local development override configuration, if available.
  *
- * Create a settings.local.php file to override variables on secondary (staging,
- * development, etc.) installations of this site.
- *
- * Typical uses of settings.local.php include:
- * - Disabling caching.
- * - Disabling JavaScript/CSS compression.
- * - Rerouting outgoing emails.
+ * Use settings.local.php to override variables on secondary (staging,
+ * development, etc) installations of this site. Typically used to disable
+ * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
+ * other things that should not happen on development and testing sites.
  *
  * Keep this code block at the end of this file to take full effect.
  */
@@ -773,3 +785,6 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+
+$settings['config_sync_directory'] = '../config/sync';
+
