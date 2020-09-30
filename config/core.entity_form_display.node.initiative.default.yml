@@ -26,7 +26,6 @@ dependencies:
     - image.style.thumbnail
     - node.type.initiative
   module:
-    - autocomplete_deluxe
     - datetime_range
     - field_layout
     - file
@@ -113,19 +112,12 @@ content:
   field_funding:
     weight: 13
     settings:
-      limit: '10'
-      min_length: '0'
-      delimiter: ''
-      not_found_message_allow: '1'
-      not_found_message: 'The term was not found'
-      no_empty_message: 'No terms could be found'
-      new_terms: 0
       match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      selection_handler: default
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
-    type: autocomplete_deluxe
+    type: entity_reference_autocomplete_tags
     region: content
   field_image:
     weight: 18
@@ -158,19 +150,12 @@ content:
   field_stakeholder:
     weight: 11
     settings:
-      limit: '10'
-      min_length: '0'
-      delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      new_terms: '1'
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
-      not_found_message_allow: 0
       match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      selection_handler: default
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
-    type: autocomplete_deluxe
+    type: entity_reference_autocomplete_tags
     region: content
   field_status:
     weight: 5
@@ -189,36 +174,22 @@ content:
   field_strategy:
     weight: 3
     settings:
-      limit: '10'
-      min_length: '0'
-      delimiter: ''
-      not_found_message: 'The term was not found'
-      no_empty_message: 'No terms could be found'
-      not_found_message_allow: 0
-      new_terms: 0
       match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      selection_handler: default
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
-    type: autocomplete_deluxe
+    type: entity_reference_autocomplete_tags
     region: content
   field_tag:
     weight: 14
     settings:
-      limit: '10'
-      min_length: '0'
-      delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      new_terms: '1'
-      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
-      not_found_message_allow: 0
       match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
-      selection_handler: default
+      match_limit: 10
+      placeholder: ''
     third_party_settings: {  }
-    type: autocomplete_deluxe
+    type: entity_reference_autocomplete_tags
     region: content
   field_time_period:
     weight: 15
@@ -233,6 +204,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

@@ -1,20 +1,20 @@
-uuid: dc3f0a87-b8a7-41d1-9341-7095ec571979
+uuid: a9f54695-2e0c-4e05-88cb-9e259ca5d349
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.initiative
-id: node.initiative.promote
-field_name: promote
+id: node.initiative.status
+field_name: status
 entity_type: node
 bundle: initiative
-label: 'Promoted to front page'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'

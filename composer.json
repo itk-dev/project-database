@@ -48,6 +48,9 @@
         "patches": {
             "drupal/openapi_jsonapi": {
                 "Only show enabled endpoints": "patches/only_show_enabled_endpoints.patch"
+            },
+            "drupal/autocomplete_deluxe": {
+                "Translate terms": "https://www.drupal.org/files/issues/enable_taxonomy_translations-1787800-14.patch"
             }
         },
         "installer-paths": {

@@ -7,7 +7,7 @@ configurable:
 negotiation:
   language_content:
     enabled:
-      language-interface: 0
+      language-interface: 9
     method_weights:
       language-content-entity: -9
       language-url: -8
@@ -22,7 +22,6 @@ negotiation:
       language-url-fallback: 1
   language_interface:
     enabled:
-      language-user-admin: -20
       language-url: -18
       language-selected: -15
     method_weights:

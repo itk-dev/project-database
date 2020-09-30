@@ -12,7 +12,7 @@ bundle: initiative
 label: 'Er initiativet vedtaget'
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value:
   -
     value: 1
