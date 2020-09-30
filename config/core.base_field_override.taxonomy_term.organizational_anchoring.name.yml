@@ -1,0 +1,18 @@
+uuid: 3bb3ea02-d216-4b49-8d96-a4dadc734c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organizational_anchoring
+id: taxonomy_term.organizational_anchoring.name
+field_name: name
+entity_type: taxonomy_term
+bundle: organizational_anchoring
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

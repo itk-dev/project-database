@@ -1,0 +1,22 @@
+uuid: 861025d0-091a-46f0-8f52-8d80ec3874aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.endorsement_author
+id: taxonomy_term.endorsement_author.status
+field_name: status
+entity_type: taxonomy_term
+bundle: endorsement_author
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

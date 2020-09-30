@@ -1,0 +1,18 @@
+uuid: 6bba271a-48a5-4000-b101-7ad1f0d182f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.endorsement_author
+id: taxonomy_term.endorsement_author.name
+field_name: name
+entity_type: taxonomy_term
+bundle: endorsement_author
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

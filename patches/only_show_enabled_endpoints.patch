@@ -1,0 +1,21 @@
+diff --git a/src/Plugin/openapi/OpenApiGenerator/JsonApiGenerator.php b/src/Plugin/openapi/OpenApiGenerator.php
+--- a/src/Plugin/openapi/OpenApiGenerator/JsonApiGenerator.php	2020-09-30 12:13:39.000000000 +0200
++++ b/src/Plugin/openapi/OpenApiGenerator/JsonApiGenerator.php	2020-09-30 12:10:29.000000000 +0200
+@@ -205,7 +205,17 @@
+   public function getPaths() {
+     $routes = $this->getJsonApiRoutes();
+     $api_paths = [];
++    $read_only_mode_is_enabled = $this->configFactory->get('jsonapi.settings')->get('read_only');
++    $read_only_methods = ['GET', 'HEAD', 'OPTIONS', 'TRACE'];
+     foreach ($routes as $route_name => $route) {
++      if ($read_only_mode_is_enabled === TRUE) {
++        $supported_methods = $route->getMethods();
++        assert(count($supported_methods) > 0, 'JSON:API routes always have a method specified.');
++        $is_read_only_route = empty(array_diff($supported_methods, $read_only_methods));
++        if ($is_read_only_route === FALSE) {
++          continue;
++        }
++      }
+       /** @var \Drupal\jsonapi\ResourceType\ResourceType $resource_type */
+       $resource_type = $this->getResourceType($route_name, $route);
+       $entity_type_id = $resource_type->getEntityTypeId();

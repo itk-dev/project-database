@@ -1,0 +1,22 @@
+uuid: b455bdfc-4401-451a-8e3f-09bb99da9b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organizational_anchoring
+id: taxonomy_term.organizational_anchoring.status
+field_name: status
+entity_type: taxonomy_term
+bundle: organizational_anchoring
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

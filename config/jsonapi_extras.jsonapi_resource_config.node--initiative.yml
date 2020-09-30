@@ -1,0 +1,250 @@
+uuid: 39606685-06b2-400e-87a3-1c2d01651c28
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.initiative
+  module:
+    - jsonapi_defaults
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: node--initiative
+disabled: false
+path: node/initiative
+resourceType: node--initiative
+resourceFields:
+  nid:
+    fieldName: nid
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+  vid:
+    disabled: true
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+  revision_timestamp:
+    disabled: true
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: true
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: true
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+  title:
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+    disabled: false
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+  promote:
+    disabled: true
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: true
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: true
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: true
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: true
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  content_translation_source:
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+    disabled: false
+  content_translation_outdated:
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+    disabled: false
+  field_author:
+    fieldName: field_author
+    publicName: author
+    enhancer:
+      id: ''
+    disabled: false
+  field_budget:
+    fieldName: field_budget
+    publicName: budget
+    enhancer:
+      id: ''
+    disabled: false
+  field_category:
+    fieldName: field_category
+    publicName: category
+    enhancer:
+      id: ''
+    disabled: false
+  field_contact:
+    fieldName: field_contact
+    publicName: contact
+    enhancer:
+      id: ''
+    disabled: false
+  field_description:
+    fieldName: field_description
+    publicName: description
+    enhancer:
+      id: ''
+    disabled: false
+  field_endorsement:
+    fieldName: field_endorsement
+    publicName: endorsement
+    enhancer:
+      id: ''
+    disabled: false
+  field_endorsement_author:
+    fieldName: field_endorsement_author
+    publicName: endorsement_author
+    enhancer:
+      id: ''
+    disabled: false
+  field_file:
+    fieldName: field_file
+    publicName: file
+    enhancer:
+      id: ''
+    disabled: false
+  field_funding:
+    fieldName: field_funding
+    publicName: funding
+    enhancer:
+      id: ''
+    disabled: false
+  field_image:
+    fieldName: field_image
+    publicName: image
+    enhancer:
+      id: ''
+    disabled: false
+  field_initiative_type:
+    fieldName: field_initiative_type
+    publicName: initiative_type
+    enhancer:
+      id: ''
+    disabled: false
+  field_link:
+    fieldName: field_link
+    publicName: link
+    enhancer:
+      id: ''
+    disabled: false
+  field_organizational_anchoring:
+    fieldName: field_organizational_anchoring
+    publicName: organizational_anchoring
+    enhancer:
+      id: ''
+    disabled: false
+  field_stakeholder:
+    fieldName: field_stakeholder
+    publicName: stakeholder
+    enhancer:
+      id: ''
+    disabled: false
+  field_status:
+    fieldName: field_status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+  field_status_additional:
+    fieldName: field_status_additional
+    publicName: status_additional
+    enhancer:
+      id: ''
+    disabled: false
+  field_strategy:
+    fieldName: field_strategy
+    publicName: strategy
+    enhancer:
+      id: ''
+    disabled: false
+  field_tag:
+    fieldName: field_tag
+    publicName: tag
+    enhancer:
+      id: ''
+    disabled: false
+  field_time_period:
+    fieldName: field_time_period
+    publicName: time_period
+    enhancer:
+      id: ''
+    disabled: false

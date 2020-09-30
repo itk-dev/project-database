@@ -1,0 +1,18 @@
+uuid: 48151386-ea82-4575-a36e-0aca7f3fe60c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.funding
+id: taxonomy_term.funding.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: funding
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

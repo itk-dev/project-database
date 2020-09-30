@@ -1,0 +1,22 @@
+uuid: 54ae59b5-728c-4658-b909-8a6bf5a4bdff
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategy
+id: taxonomy_term.strategy.status
+field_name: status
+entity_type: taxonomy_term
+bundle: strategy
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

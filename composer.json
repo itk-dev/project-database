@@ -16,12 +16,18 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/autocomplete_deluxe": "^2.0@RC",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/entity_reference_integrity": "^1.0@RC",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jsonapi_extras": "^3.16",
+        "drupal/openapi": "^2.0@RC",
+        "drupal/openapi_jsonapi": "^2.0@RC",
+        "drupal/openapi_ui_redoc": "^1.0@RC",
         "drush/drush": "^10.3"
     },
     "conflict": {
@@ -36,6 +42,12 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            }
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/openapi_jsonapi": {
+                "Only show enabled endpoints": "patches/only_show_enabled_endpoints.patch"
             }
         },
         "installer-paths": {

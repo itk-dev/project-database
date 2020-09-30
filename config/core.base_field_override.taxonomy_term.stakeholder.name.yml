@@ -1,0 +1,18 @@
+uuid: ce8ce084-041c-43d0-8f7d-c1c2c5e4c992
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.stakeholder
+id: taxonomy_term.stakeholder.name
+field_name: name
+entity_type: taxonomy_term
+bundle: stakeholder
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

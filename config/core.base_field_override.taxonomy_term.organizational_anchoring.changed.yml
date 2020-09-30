@@ -1,0 +1,18 @@
+uuid: 70a36f98-bb6c-4b7a-bbb5-b6ab2e7a2f73
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organizational_anchoring
+id: taxonomy_term.organizational_anchoring.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: organizational_anchoring
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: a05ea083-27e7-4f77-906d-0bd81f263525
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.funding
+id: taxonomy_term.funding.name
+field_name: name
+entity_type: taxonomy_term
+bundle: funding
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

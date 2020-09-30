@@ -1,0 +1,18 @@
+uuid: 5225f753-a79b-4227-a259-1d6af5f4e9ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategy
+id: taxonomy_term.strategy.name
+field_name: name
+entity_type: taxonomy_term
+bundle: strategy
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

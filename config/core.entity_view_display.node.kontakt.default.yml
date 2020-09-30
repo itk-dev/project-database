@@ -10,6 +10,7 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
+    - telephone
     - user
 third_party_settings:
   field_layout:
@@ -22,7 +23,7 @@ bundle: kontakt
 mode: default
 content:
   field_department:
-    weight: 103
+    weight: 2
     label: above
     settings:
       link_to_entity: false
@@ -30,23 +31,20 @@ content:
     type: string
     region: content
   field_email:
-    weight: 101
+    weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_phone:
-    weight: 102
+    weight: 1
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    type: telephone_link
     region: content
 hidden:
   langcode: true
+  links: true

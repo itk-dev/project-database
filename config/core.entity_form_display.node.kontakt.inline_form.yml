@@ -1,0 +1,62 @@
+uuid: 934231bd-9549-4c3d-bd11-5fc09ccd460f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline_form
+    - field.field.node.kontakt.field_department
+    - field.field.node.kontakt.field_email
+    - field.field.node.kontakt.field_phone
+    - node.type.kontakt
+  module:
+    - field_layout
+    - layout_discovery
+    - telephone
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.kontakt.inline_form
+targetEntityType: node
+bundle: kontakt
+mode: inline_form
+content:
+  field_department:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -21,14 +21,8 @@ targetEntityType: node
 bundle: kontakt
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_department:
-    weight: 123
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -36,7 +30,7 @@ content:
     type: string_textfield
     region: content
   field_email:
-    weight: 121
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -44,56 +38,24 @@ content:
     type: email_default
     region: content
   field_phone:
-    weight: 122
+    weight: 2
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
