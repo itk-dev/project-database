@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.node.inline_form
-    - field.field.node.kontakt.field_department
-    - field.field.node.kontakt.field_email
-    - field.field.node.kontakt.field_phone
-    - node.type.kontakt
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_phone
+    - node.type.contact
   module:
     - field_layout
     - layout_discovery
@@ -17,9 +17,9 @@ third_party_settings:
     id: layout_onecol
     settings:
       label: ''
-id: node.kontakt.inline_form
+id: node.contact.inline_form
 targetEntityType: node
-bundle: kontakt
+bundle: contact
 mode: inline_form
 content:
   field_department:

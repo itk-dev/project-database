@@ -3,16 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.kontakt
+    - node.type.contact
   module:
     - jsonapi_defaults
 third_party_settings:
   jsonapi_defaults:
     page_limit: 50
-id: node--kontakt
+id: node--contact
 disabled: false
-path: node/kontakt
-resourceType: node--kontakt
+path: node/contact
+resourceType: node--contact
 resourceFields:
   nid:
     fieldName: nid
