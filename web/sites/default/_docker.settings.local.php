@@ -47,5 +47,5 @@ $settings['file_private_path'] = '../private-files';
  * Set trusted host pattern.
  */
 $settings['trusted_host_patterns'] = [
-  '^project_database\.local\.itkdev\.dk$',
+  '^project-database\.local\.itkdev\.dk$',
 ];
