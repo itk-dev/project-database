@@ -3,8 +3,8 @@
 /**
  * Add development service settings.
  */
-if (file_exists(__DIR__ . '/services.local.yml')) {
-  $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
+if (file_exists(__DIR__ . '/../development.services.yml')) {
+  $settings['container_yamls'][] = __DIR__ . '/../development.services.yml';
 }
 
 /**
