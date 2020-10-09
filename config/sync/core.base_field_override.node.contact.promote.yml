@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.kontakt
-id: node.kontakt.promote
+    - node.type.contact
+id: node.contact.promote
 field_name: promote
 entity_type: node
-bundle: kontakt
+bundle: contact
 label: 'Promoted to front page'
 description: ''
 required: false

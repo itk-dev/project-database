@@ -4,11 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_department
-    - node.type.kontakt
-id: node.kontakt.field_department
+    - node.type.contact
+id: node.contact.field_department
 field_name: field_department
 entity_type: node
-bundle: kontakt
+bundle: contact
 label: Afdeling
 description: ''
 required: false
