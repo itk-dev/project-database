@@ -1,0 +1,13 @@
+<?php
+
+function projectDatabase_preprocess_views_view(&$variables) {
+//   print_r(array_keys($variables));
+//    print_r($variables['view']);
+ //   $variables['custom_viewname'] = $variables['title'];
+if($variables['id'] == 'initiver') {
+ //   print_r(array_keys($variables));
+ //    path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')); 
+    $variables['custom_currentRequestUri'] = \Drupal::request()->getRequestUri();
+
+}
+}
