@@ -1,13 +1,13 @@
-uuid: 8b680470-f7f0-42a8-9d23-21149097838a
+uuid: 53e6c41d-be71-4824-ba56-8f080515b96f
 langcode: da
 status: true
 dependencies:
   theme:
-    - claro
+    - projectDatabase
 _core:
   default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
-id: claro_primary_local_tasks
-theme: claro
+id: projectDatabase_primary_local_tasks
+theme: projectDatabase
 region: header
 weight: 0
 provider: null
