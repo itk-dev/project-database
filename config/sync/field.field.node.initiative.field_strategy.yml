@@ -11,7 +11,7 @@ field_name: field_strategy
 entity_type: node
 bundle: initiative
 label: 'Hvilke strategier og planer understøtter initiativet'
-description: ''
+description: 'Flere strategier/planer separeres med komma'
 required: false
 translatable: false
 default_value: {  }
