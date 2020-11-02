@@ -11,7 +11,7 @@ field_name: field_funding
 entity_type: node
 bundle: initiative
 label: Fundingkilde
-description: ''
+description: 'Flere kilder separeres med komma'
 required: false
 translatable: false
 default_value: {  }
