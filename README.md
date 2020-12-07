@@ -59,3 +59,29 @@ symfony php vendor/bin/drush --uri=https://127.0.0.1:8000 user:login
 ```sh
 admin/config/services/openapi/redoc/jsonapi
 ```
+
+## Handle CORS
+
+Create the file `web/sites/default/services.yml` with the following content:
+
+```yml
+parameters:
+  # Configure Cross-Site HTTP requests (CORS).
+  # Read https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+  # for more information about the topic in general.
+  # Note: By default the configuration is disabled.
+  cors.config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: ['content-type', 'authorization']
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: ['GET']
+    # Configure requests allowed from specific origins.
+    allowedOrigins: ['*']
+    # Sets the Access-Control-Expose-Headers header.
+    exposedHeaders: false
+    # Sets the Access-Control-Max-Age header.
+    maxAge: false
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: false
+```
