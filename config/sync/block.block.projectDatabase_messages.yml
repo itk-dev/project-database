@@ -1,15 +1,15 @@
-uuid: 26070385-8431-4911-8bed-8b08ad926e40
+uuid: e3db623e-5fc8-4347-8869-3ee3baa943a5
 langcode: da
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - projectDatabase
 _core:
-  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
-id: stark_messages
-theme: stark
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: projectDatabase_messages
+theme: projectDatabase
 region: highlighted
 weight: 0
 provider: null

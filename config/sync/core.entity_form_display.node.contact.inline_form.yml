@@ -1,12 +1,13 @@
-uuid: 46c364d7-bcfa-4e5e-a7db-36239660ef0e
+uuid: 934231bd-9549-4c3d-bd11-5fc09ccd460f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.kontakt.field_department
-    - field.field.node.kontakt.field_email
-    - field.field.node.kontakt.field_phone
-    - node.type.kontakt
+    - core.entity_form_mode.node.inline_form
+    - field.field.node.contact.field_department
+    - field.field.node.contact.field_email
+    - field.field.node.contact.field_phone
+    - node.type.contact
   module:
     - field_layout
     - layout_discovery
@@ -16,10 +17,10 @@ third_party_settings:
     id: layout_onecol
     settings:
       label: ''
-id: node.kontakt.default
+id: node.contact.inline_form
 targetEntityType: node
-bundle: kontakt
-mode: default
+bundle: contact
+mode: inline_form
 content:
   field_department:
     weight: 3
@@ -52,6 +53,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   created: true
   langcode: true

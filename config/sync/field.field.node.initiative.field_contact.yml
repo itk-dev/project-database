@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_contact
     - node.type.initiative
-    - node.type.kontakt
+    - node.type.contact
 id: node.initiative.field_contact
 field_name: field_contact
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      kontakt: kontakt
+      contact: contact
     sort:
       field: _none
     auto_create: true

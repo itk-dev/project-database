@@ -1,14 +1,14 @@
-uuid: d9716cc4-1969-47a0-be70-9c3340cf394a
+uuid: c43844a2-6a7f-417d-881a-2da99daeb03b
 langcode: da
 status: true
 dependencies:
   theme:
-    - stark
+    - projectDatabase
 _core:
-  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
-id: stark_page_title
-theme: stark
-region: content
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: projectDatabase_page_title
+theme: projectDatabase
+region: header
 weight: -30
 provider: null
 plugin: page_title_block

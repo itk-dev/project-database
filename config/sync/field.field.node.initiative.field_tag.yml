@@ -11,7 +11,7 @@ field_name: field_tag
 entity_type: node
 bundle: initiative
 label: Tags
-description: ''
+description: 'Flere tags separeres med komma'
 required: false
 translatable: true
 default_value: {  }
