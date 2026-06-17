@@ -6,3 +6,4 @@ name: 'Hvor er det vedtaget'
 vid: endorsement_author
 description: ''
 weight: 0
+new_revision: false

@@ -6,8 +6,8 @@ url:
     en: en
     da: da
   domains:
-    en: en.127.0.0.1
-    da: da.127.0.0.1
+    en: ''
+    da: ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

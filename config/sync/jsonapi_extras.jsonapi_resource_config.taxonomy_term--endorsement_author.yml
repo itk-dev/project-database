@@ -15,17 +15,17 @@ path: taxonomy_term/endorsement_author
 resourceType: taxonomy_term--endorsement_author
 resourceFields:
   tid:
+    disabled: false
     fieldName: tid
     publicName: tid
     enhancer:
       id: ''
-    disabled: false
   uuid:
+    disabled: false
     fieldName: uuid
     publicName: uuid
     enhancer:
       id: ''
-    disabled: false
   revision_id:
     disabled: true
     fieldName: revision_id
@@ -33,11 +33,11 @@ resourceFields:
     enhancer:
       id: ''
   langcode:
+    disabled: false
     fieldName: langcode
     publicName: langcode
     enhancer:
       id: ''
-    disabled: false
   vid:
     disabled: true
     fieldName: vid
@@ -63,23 +63,23 @@ resourceFields:
     enhancer:
       id: ''
   status:
+    disabled: false
     fieldName: status
     publicName: status
     enhancer:
       id: ''
-    disabled: false
   name:
+    disabled: false
     fieldName: name
     publicName: name
     enhancer:
       id: ''
-    disabled: false
   description:
+    disabled: false
     fieldName: description
     publicName: description
     enhancer:
       id: ''
-    disabled: false
   weight:
     disabled: true
     fieldName: weight
@@ -87,11 +87,11 @@ resourceFields:
     enhancer:
       id: ''
   parent:
+    disabled: false
     fieldName: parent
     publicName: parent
     enhancer:
       id: ''
-    disabled: false
   changed:
     disabled: true
     fieldName: changed

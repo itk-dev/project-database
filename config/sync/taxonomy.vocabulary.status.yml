@@ -6,3 +6,4 @@ name: Status
 vid: status
 description: ''
 weight: 0
+new_revision: false

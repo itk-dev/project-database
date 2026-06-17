@@ -6,3 +6,4 @@ name: Tags
 vid: tag
 description: ''
 weight: 0
+new_revision: false
