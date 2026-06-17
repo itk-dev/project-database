@@ -1,6 +1,6 @@
 {
     "name": "drupal/recommended-project",
-    "description": "Project template for Drupal 9 projects with a relocated document root",
+    "description": "Project template for Drupal projects with a relocated document root",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -17,18 +17,17 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.6",
-        "drupal/console": "^1.9",
-        "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
-        "drupal/core-recommended": "^9",
-        "drupal/entity_reference_integrity": "^1.0@RC",
-        "drupal/inline_entity_form": "^1.0@RC",
-        "drupal/jsonapi_extras": "^3.16",
-        "drupal/openapi": "^2.0@RC",
-        "drupal/openapi_jsonapi": "^2.0@RC",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drupal/entity_reference_integrity": "^2.0",
+        "drupal/inline_entity_form": "^3.0",
+        "drupal/jsonapi_extras": "^3.26",
+        "drupal/openapi": "^2.3",
+        "drupal/openapi_jsonapi": "^3.0.5",
         "drupal/openapi_ui_redoc": "^1.0@RC",
-        "drupal/views_data_export": "^1.0",
-        "drush/drush": "^10.3"
+        "drupal/views_data_export": "^1.10",
+        "drush/drush": "^13"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -36,7 +35,16 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3.0"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -48,9 +56,6 @@
         "patches": {
             "drupal/openapi_jsonapi": {
                 "Only show enabled endpoints": "patches/only_show_enabled_endpoints.patch"
-            },
-            "drupal/autocomplete_deluxe": {
-                "Translate terms": "https://www.drupal.org/files/issues/enable_taxonomy_translations-1787800-14.patch"
             }
         },
         "installer-paths": {
