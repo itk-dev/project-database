@@ -1,0 +1,40 @@
+# https://taskfile.dev
+
+version: '3'
+
+dotenv: ['.env.local', '.env']
+
+vars:
+  DOCKER_COMPOSE: '{{.CONTAINER_COMPOSE | default "docker compose"}}'
+  PHP: '{{.DOCKER_COMPOSE}} exec phpfpm'
+  COMPOSER: '{{.PHP}} composer'
+  DRUSH: '{{.PHP}} vendor/bin/drush'
+
+tasks:
+  install:
+    desc: 'Install the site for local development'
+    cmds:
+      - '{{.DOCKER_COMPOSE}} up --detach'
+      - cp -n web/sites/default/_docker.settings.local.php web/sites/default/docker.settings.local.php
+      - '{{.COMPOSER}} install'
+      - '{{.DRUSH}} site:install minimal --existing-config --yes'
+      - '{{.DRUSH}} user:login'
+
+  coding-standards:check:
+    desc: 'Check coding standards (Composer, PHP, Twig, YAML, Markdown)'
+    cmds:
+      - '{{.COMPOSER}} normalize --dry-run'
+      - '{{.PHP}} vendor/bin/phpcs'
+      - '{{.PHP}} vendor/bin/twig-cs-fixer lint'
+      - '{{.DOCKER_COMPOSE}} run --rm prettier "**/*.{yml,yaml}" --check'
+      - '{{.DOCKER_COMPOSE}} run --rm markdownlint markdownlint "**/*.md"'
+
+  coding-standards:apply:
+    desc: 'Apply coding standards (Composer, PHP, Twig, YAML, Markdown)'
+    cmds:
+      - '{{.COMPOSER}} normalize'
+      - cmd: '{{.PHP}} vendor/bin/phpcbf'
+        ignore_error: true
+      - '{{.PHP}} vendor/bin/twig-cs-fixer lint --fix'
+      - '{{.DOCKER_COMPOSE}} run --rm prettier "**/*.{yml,yaml}" --write'
+      - '{{.DOCKER_COMPOSE}} run --rm markdownlint markdownlint --fix "**/*.md"'

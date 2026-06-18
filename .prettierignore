@@ -1,0 +1,15 @@
+# Drupal-managed configuration (owned by config import/export, not Prettier).
+/config/sync/
+
+# Drupal scaffold files (owned by drupal/core-composer-scaffold).
+/web/sites/default/default.services.yml
+/web/sites/development.services.yml
+
+# Composer- and Drupal-managed code.
+/vendor/
+/web/core/
+/web/libraries/
+/web/modules/contrib/
+/web/profiles/contrib/
+/web/themes/contrib/
+/web/sites/*/files/
