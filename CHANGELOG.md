@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+* [#15](https://github.com/itk-dev/project-database/pull/15)
+  Security updates
+
 ### Changed
 
 - Upgraded Drupal core 9.3 → 11.3 and contrib to Drupal 11-compatible releases.
