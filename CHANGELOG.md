@@ -9,15 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * [#15](https://github.com/itk-dev/project-database/pull/15)
   Security updates
-
-### Changed
-
-* Upgraded Drupal core 9.3 → 11.3 and contrib to Drupal 11-compatible releases.
-* Switched runtime to PHP 8.4; Drush 10 → 13.
-* Aligned the development setup with the itk-dev `drupal-11` Docker template
-  (docker-compose with healthchecks, `nginx-unprivileged`, Mailpit, GitHub
-  Actions workflows and lint configuration).
-
-### Removed
-
-* Removed the abandoned `drupal/console` dependency.
+* [#14](https://github.com/itk-dev/project-database/pull/14)
+  Aligned the development setup with the itk-dev D11 Docker template
+* [#13](https://github.com/itk-dev/project-database/pull/13)
+  Upgrade from D9 to D11
