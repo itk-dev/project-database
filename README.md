@@ -6,14 +6,23 @@ A drupal backend that exposes projects created with an API.
 
 ### Production
 
-@TODO
+Deploy using the server Docker Compose override:
+
+```sh
+docker compose --file docker-compose.yml --file docker-compose.server.yml up --detach
+```
+
+Set `COMPOSE_SERVER_DOMAIN` in `.env` (or `.env.local`) to the production domain.
+
+This project follows the itk-dev [`drupal-11` Docker
+template](https://github.com/itk-dev/devops_itkdev-docker) and runs on PHP 8.4.
 
 ### Development
 
 Setup Docker environment:
 
 ```sh
-docker-compose up -d
+docker compose up --detach
 ```
 
 Setup local site configuration:
@@ -25,34 +34,22 @@ cp web/sites/default/_docker.settings.local.php web/sites/default/docker.setting
 Install php packages:
 
 ```sh
-docker-compose exec phpfpm composer install
+docker compose exec phpfpm composer install
 ```
 
 Install site:
 
 ```sh
-docker-compose exec phpfpm vendor/bin/drush site-install minimal --existing-config --yes
+docker compose exec phpfpm vendor/bin/drush site:install minimal --existing-config --yes
 ```
 
-Sign in as admin:
+Sign in as admin (the site uri is provided to Drush via `DRUSH_OPTIONS_URI`):
 
 ```sh
-docker-compose exec phpfpm vendor/bin/drush --uri=http://$(docker-compose port nginx 80) user:login
+docker compose exec phpfpm vendor/bin/drush user:login
 ```
 
-#### Using Symfony Local Web Server
-
-See [Symfony Local Web
-Server](https://symfony.com/doc/current/setup/symfony_server.html) for details.
-
-```sh
-docker-compose up -d
-symfony composer install
-symfony php vendor/bin/drush site-install minimal --existing-config --yes
-symfony local:server:start --daemon
-# Update the uri to the actual address of the running web server.
-symfony php vendor/bin/drush --uri=https://127.0.0.1:8000 user:login
-```
+The site is served through Traefik at <https://project-database.local.itkdev.dk>.
 
 ## Api documentation
 
