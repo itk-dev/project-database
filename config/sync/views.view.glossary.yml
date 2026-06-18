@@ -253,7 +253,6 @@ display:
           path_case: lower
           transform_dash: false
           break_phrase: false
-          default_argument_skip_url: false
       filters:
         langcode:
           id: langcode
@@ -410,7 +409,6 @@ display:
           path_case: lower
           transform_dash: false
           break_phrase: false
-          default_argument_skip_url: false
       query:
         type: views_query
         options: {  }

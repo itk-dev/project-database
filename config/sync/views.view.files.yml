@@ -1033,7 +1033,6 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          default_argument_skip_url: false
       filters: {  }
       filter_groups:
         operator: AND
