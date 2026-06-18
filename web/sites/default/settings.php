@@ -767,6 +767,22 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 
+/**
+ * Database connection.
+ *
+ * Defaults match the Docker development database; override per environment
+ * with the DATABASE_* environment variables.
+ */
+$databases['default']['default'] = [
+  'database' => getenv('DATABASE_DATABASE') ?: 'db',
+  'username' => getenv('DATABASE_USERNAME') ?: 'db',
+  'password' => getenv('DATABASE_PASSWORD') ?: 'db',
+  'host' => getenv('DATABASE_HOST') ?: 'mariadb',
+  'port' => getenv('DATABASE_PORT') ?: '',
+  'driver' => getenv('DATABASE_DRIVER') ?: 'mysql',
+  'prefix' => '',
+];
+
 if (file_exists($app_root . '/' . $site_path . '/docker.settings.local.php')) {
   include $app_root . '/' . $site_path . '/docker.settings.local.php';
 }

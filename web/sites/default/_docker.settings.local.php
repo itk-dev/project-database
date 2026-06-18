@@ -21,19 +21,6 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 $settings['cache']['bins']['page'] = 'cache.backend.null';
 
 /**
- * Define database connection.
- */
-$databases['default']['default'] = [
-  'database' => getenv('DATABASE_DATABASE') ?: 'db',
-  'username' => getenv('DATABASE_USERNAME') ?: 'db',
-  'password' => getenv('DATABASE_PASSWORD') ?: 'db',
-  'host' => getenv('DATABASE_HOST') ?: 'mariadb',
-  'port' => getenv('DATABASE_PORT') ?: '',
-  'driver' => getenv('DATABASE_DRIVER') ?: 'mysql',
-  'prefix' => '',
-];
-
-/**
  * Set hash salt.
  */
 $settings['hash_salt'] = '1234';
