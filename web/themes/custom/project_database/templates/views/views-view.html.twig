@@ -60,9 +60,8 @@
       {{ attachment_before }}
     </div>
   {% endif %}
-  <a href='{{ custom_currentRequestUri |replace({'initiativer':'export'}) }}'>{{ 'Export csv'|t }}</a>
-  
-  
+  <a href='{{ custom_currentRequestUri|replace({initiativer: 'export'}) }}'>{{ 'Export csv'|t }}</a>
+
   {% if rows %}
     <div class="view-content">
       {{ rows }}

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Theme functions for the Project database theme.
+ */
+
+/**
+ * Implements hook_preprocess_views_view().
+ *
+ * Adds a custom_currentRequestUri variable containing the request URI.
+ */
+function project_database_preprocess_views_view(&$variables) {
+  if ($variables['id'] == 'initiver') {
+    $variables['custom_currentRequestUri'] = \Drupal::request()->getRequestUri();
+  }
+}

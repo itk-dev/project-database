@@ -53,5 +53,5 @@ module:
 theme:
   stark: 0
   claro: 0
-  projectDatabase: 0
+  project_database: 0
 profile: minimal

@@ -3,11 +3,11 @@ langcode: da
 status: true
 dependencies:
   theme:
-    - projectDatabase
+    - project_database
 _core:
   default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
-id: projectDatabase_page_title
-theme: projectDatabase
+id: project_database_page_title
+theme: project_database
 region: header
 weight: -30
 provider: null

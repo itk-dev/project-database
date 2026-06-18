@@ -1,0 +1,7 @@
+name: 'Project database'
+type: theme
+description: 'Custom theme for the Project database site, based on Claro.'
+package: Custom
+version: VERSION
+base theme: claro
+core_version_requirement: ^10 || ^11

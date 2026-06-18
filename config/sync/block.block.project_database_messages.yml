@@ -5,11 +5,11 @@ dependencies:
   module:
     - system
   theme:
-    - projectDatabase
+    - project_database
 _core:
   default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
-id: projectDatabase_messages
-theme: projectDatabase
+id: project_database_messages
+theme: project_database
 region: highlighted
 weight: 0
 provider: null
