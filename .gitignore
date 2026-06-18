@@ -2,3 +2,5 @@ vendor/
 .env.local
 .idea
 private-files
+.migration-backup/
+.twig-cs-fixer.cache
